@@ -358,3 +358,126 @@ span {
     font-size: 1.563rem;
 }
 
+/*Responsive-design*/
+
+@media screen and (max-width: 1000px) {
+    
+    .nav-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        margin-left: 10px;
+        margin-right: 10px;
+    
+        display: flex;
+        align-self: center;
+    }
+
+    #navbar img {
+        padding-left: 15px;
+
+        display: none;
+    }
+
+    #welcome-header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-header1 {
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+    .welcome-header2 {
+        margin-right: 0;
+
+        transform: rotate(0deg);
+
+        text-align: center;
+    }
+
+    .welcome-header3 {
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+    #big-text-links {
+        display: grid;
+        grid-template: 
+        "a"
+        "b"
+        "c";
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #project {
+        min-height: 100vh;
+        
+        display: grid;
+        grid-template-rows: 20% 80%;
+    }
+
+    #project-container {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+    
+        gap: 20px;
+    }
+
+    .project-tile {
+        width: 75%;
+        max-width: 100%;
+        max-height: 50vh; 
+    }
+
+    #big-text-links h2 {
+            font-size: 4.768rem;
+    }
+
+    #github-link-container a {
+        transform: rotate(0deg);    
+    }
+
+    #github-link-container {    
+        margin-bottom: 0;
+        margin-right: 0;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-area: b;
+    }
+
+    #linked-in-link-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-area: a;
+    }
+
+    #email-link-container {
+        margin-right: 0;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-area: c;
+    }
+
+}
